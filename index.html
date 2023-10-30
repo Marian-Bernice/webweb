@@ -18,9 +18,9 @@
       </a>
       <ul class="menu-links">
         <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="#">About Me</a></li>
         <li><a href="#">My LinkedIn</a></li>
-        <li><a href="#">Contact Me</a></li>
+        <li><a href="#">Contact Us</a></li>
         <span id="close-menu-btn" class="material-symbols-outlined">close</span>
       </ul>
       <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
@@ -45,18 +45,6 @@
       </div>
     </div>
   </section>
-  
-  <script>
-    const header = document.querySelector("header");
-    const hamburgerBtn = document.querySelector("#hamburger-btn");
-    const closeMenuBtn = document.querySelector("#close-menu-btn");
-
-    // Toggle mobile menu on hamburger button click
-    hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
-
-    // Close mobile menu on close button click
-    closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
-  </script>
 
   <div class="wrapper">
       <i id="left" class="fa-solid fa-angle-left"></i>
@@ -73,5 +61,17 @@
       </div>
       <i id="right" class="fa-solid fa-angle-right"></i>
     </div>
+  
+  <script>
+    const header = document.querySelector("header");
+    const hamburgerBtn = document.querySelector("#hamburger-btn");
+    const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+    // Toggle mobile menu on hamburger button click
+    hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+    // Close mobile menu on close button click
+    closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+  </script>
 </body>
 </html>
