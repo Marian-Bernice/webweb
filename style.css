@@ -93,14 +93,14 @@ header .navbar {
   border: none;
   outline: none;
   cursor: pointer;
-  background: #1dbf73;
+  background: #FFC0CB;
   color: #fff;
   border-radius: 0 4px 4px 0;
   transition: background 0.2s ease;
 }
 
 .hero-section .search-form button:hover {
-  background: #19a463;
+  background: #FFC0CB;
 }
 
 .hero-section .popular-tags {
