@@ -233,6 +233,7 @@ header .navbar {
   max-width: 1200px;
   position: relative;
   }
+  
   .wrapper i{
     top: 50%;
     height: 44px;
@@ -248,19 +249,24 @@ header .navbar {
     transform: translateY(-50%);
     transition: transform 0.1s linear;
   }
+  
   .wrapper i:active{
     transform: translateY(-50%) scale(0.9);
   }
+  
   .wrapper i:hover{
     background: #f2f2f2;
   }
+  
   .wrapper i:first-child{
     left: -22px;
     display: none;
   }
+  
   .wrapper i:last-child{
     right: -22px;
   }
+  
   .wrapper .carousel{
     font-size: 0px;
     cursor: pointer;
@@ -268,13 +274,16 @@ header .navbar {
     white-space: nowrap;
     scroll-behavior: smooth;
   }
+  
   .carousel.dragging{
     cursor: grab;
     scroll-behavior: auto;
   }
+  
   .carousel.dragging img{
     pointer-events: none;
   }
+  
   .carousel img{
     height: 340px;
     object-fit: cover;
@@ -282,6 +291,7 @@ header .navbar {
     margin-left: 14px;
     width: calc(100% / 3);
   }
+  
   .carousel img:first-child{
     margin-left: 0px;
   }
