@@ -36,14 +36,14 @@ header .navbar {
 }
 
 .navbar .menu-links li a {
-  color: #fff;
+  color: #000000;
   font-weight: 500;
   text-decoration: none;
   transition: 0.2s ease;
 }
 
 .navbar .menu-links li a:hover {
-  color: #1dbf73;
+  color: #FFC0CB;
 }
 
 .hero-section {
