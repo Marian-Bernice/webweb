@@ -230,8 +230,9 @@ header .navbar {
 
   .wrapper{
   display: flex;
-  max-width: 1200px;
+  max-width: 100%;
   position: relative;
+  justify-content: center;
   }
   
   .wrapper i{
@@ -285,11 +286,13 @@ header .navbar {
   }
   
   .carousel img{
-    height: 340px;
+    height: auto;
+    max-width: 300px;
     object-fit: cover;
     user-select: none;
     margin-left: 14px;
     width: calc(100% / 3);
+    margin: 0 7px;
   }
   
   .carousel img:first-child{
