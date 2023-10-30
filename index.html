@@ -1,124 +1,226 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Welcome to CSCB20</title>
-	<link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename='css/index.css') }}">
-    <link rel="stylesheet" type="text/css" href="footer.css" />
+    <link rel="stylesheet" href="index.css">
 </head>
-<body style="background-color:#C7CED4">
-
-	<div class="container">
-		<div class="header">
-			<h2 class="logo"> CSCB20: Winter 2020 </h2>
-			<input type="checkbox" id="chk">
-			<label for="chk" class="show-menu-btn">
-				<i class="fas fa-bars"><img id="menu-icon"src="images/menu.png" width: 45px height=25px></i>
-			</label>
-
-			<ul class="menu">
-					<a href="index.html">Home</a>
-					<a href="news.html">Announcements</a>
-					<a href="syllabus.html">Lecture Material</a>
-					<a href="">Assignments</a> 
-					<a href="">Tests</a>
-					<a href="https://piazza.com" target="blank">Piazza</a>  
-					<a href="">Labs</a>  
-					<a href="">Resources</a>
-					<label for="chk" class="hide-menu-btn">
-						<i class="fas fa-times"><img src="images/times.png" width: 45px height=25px></i>
-					</label>
-			</ul>
+<body>
+    <div>
+        <div class="bg-white">
+            <div class="header">
+		<div class="container">
+		<!-- Logo Section -->
+		<div class="logo-section">
+		    <a href="/" class="logo-link">
+			<img src="Ashesi_University_Logo.png" alt="Ashesi University Logo" class="logo-img">
+			<p>e-Learning</p>
+		    </a>
+		    <p>Website</p>
 		</div>
-
-		<div class="welcome">
-			<h3>Introduction to Databases and Web Design</h3>
-			<hr class="hr1">
-			<p>A practical introduction to databases and Web app development. Databases: terminology and applications; creating, querying and updating databases; the entity-relationship model for database design. Web documents and applications: static and interactive documents; Web servers and dynamic server-generated content; Web application development and interface with databases. Click <a href ="content/syllabus.pdf" target="blank">here</a> for the syllabus.</p>
-
-			
+	
+		<div class="navbar">
+		    <ul class="nav-list">
+		        <li class="nav-item">
+		            <a href="link_here" class="nav-link">Nav 1</a>
+		            <!-- Placeholder for red dot (You can toggle the 'active' class based on the current page) -->
+		            <span class="red-dot"></span>
+		        </li>
+		        <li class="nav-item">
+		            <a href="link_here" class="nav-link">Nav 2</a>
+		        </li>
+		    </ul>
 		</div>
-		<hr class="hr-seperator">
-
-		<div class="info">
-			<h3>Overview of the Course</h3>
-			<hr>
-			<br>
-			<b>Instructor: </b><a class= "anna" href="https://www.utsc.utoronto.ca/cms/anna-bretscher">Dr. Anna Bretscher</a> <br>
-			<b>Email: </b> <a class= "anna-email" href="mailto:bretscher@utsc.utoronto.ca">bretscher@utsc.utoronto.ca</a> <br>
-			<b>Office: </b> IC493 <br>
-			<b>Phone: </b> (416) 208-4745 <br>
-			<b>Lectures: </b> Mondays 9:00-11:00am in SY110 <br>
-			<b>Office Hours: </b> Wednesday 11:00-12:00<br>
-		</div>
-
-		<hr class="hr-seperator">
-
-		<div class="course-team">
-			<h3>Course Team</h3>
-			<hr>
-			<br>
-			<div class="person-bar">
-				<div class="role"></div>
-				<div class="name">Name</div>
-				<div class="email">Email</div>
-			</div>
-			<div class="person-bar">
-				<div class="role">Instructor</div>
-				<div class="name">Anna Bretscher</div>
-				<div class="email">bretscher@utsc.utoronto.ca</div>
-			</div>
-			<div class="person-bar">
-				<div class="role">Teaching Assistant</div>
-				<div class="name">Vidya Ananda</div>
-				<div class="email">john.doe@utsc.utoronto.ca</div>
-			</div>
-			<div class="person-bar">
-				<div class="role">Teaching Assistant</div>
-				<div class="name">Brian Lam</div>
-				<div class="email">jane.doe@utsc.utoronto.ca</div>
-			</div>
-			<div class="person-bar">
-				<div class="role">Teaching Assistant</div>
-				<div class="name">Dharmik Shah</div>
-				<div class="email">john.doe@utsc.utoronto.ca</div>
-			</div>
-			<div class="person-bar">
-				<div class="role">Teaching Assistant</div>
-				<div class="name">Frederic Pun</div>
-				<div class="email">jane.doe@utsc.utoronto.ca</div>
-			</div>
-			<div class="person-bar">
-				<div class="role">Teaching Assistant</div>
-				<div class="name">	Kevin Zhang</div>
-				<div class="email">john.doe@utsc.utoronto.ca</div>
-			</div>
-			<div class="person-bar">
-				<div class="role">Teaching Assistant</div>
-				<div class="name">Sakina Shabbir</div>
-				<div class="email">jane.doe@utsc.utoronto.ca</div>
-			</div>			
-			
-		</div>
-		<div class="footer">
-            <div class="footer-content">
-                <div class="footer-contentimage">
-                    <img src="images/uoft.png" class="footerimage" />
-                </div>
-                <div class="footer-contentfeedback">
-                    <h2>Anonymous Feedback</h2>
-                    <br>
-                    <form method="post">
-                        <textarea name="message" class="textbox" placeholder="Your Feedback..." rows="4" required></textarea>
-                        <br>
-                        <input type="submit" class="submit" value="SUBMIT">
-                         </input>
-                    <form>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <a class="specialInfo" href="https://www.utsc.utoronto.ca/cms/faculty-of-computer-science" target="_blank"> Faculty of Computer Science at UofT </a>| &copy;Designed by Omar Patel & Umar Khan
-            </div>
-        </div>
+	    </div>
 	</div>
+
+
+            <main>
+                <main>
+		    <!-- OUR VISION  -->
+		    <section class="px-4 md-px-20 my-4 bg-[#f9f9f9] py-24">
+			<div className="md:grid md:grid-cols-2">
+		              <div>
+		                <div className="max-w-xl space-y-3">
+		                  <p className="uppercase text-primary font-medium text-xl">
+		                    Our Vision
+		                  </p>
+		                  <div className="flex justify-between">
+		                    <p className="text-4xl font-semibold leading-snug">
+		                      Empower young Africans to think{" "}
+		                      <span className="text-primary">differently.</span>
+		                    </p>
+		                  </div>
+		
+		                  <p>
+		                    With the Ashesi e-Learning Platform, young Africans admitted
+		                    to university will be empowered to use different ways of
+		                    thinking (i.e., critical, quantitative, visual,
+		                    entrepreneurial, innovative, etc.) to deeply understand
+		                    their discipline and learn context-specific approaches to
+		                    problem solving with the intent to transform Africa
+		                  </p>
+		
+		                  <div className="pt-6">
+		                    <button
+		                      className="bg-primary text-white py-2 w-40 rounded mx-auto"
+		                      onClick={() => navigate("/faqs")}
+		                    >
+		                      Learn More
+		                    </button>
+		                  </div>
+		                </div>
+		              </div>
+		
+		              <div>
+		                <img
+		                  src={AfricaIllustration}
+		                  className="mx-auto max-w-[400px]"
+		                  alt="Africa Map"
+		                />
+		              </div>
+		            </div>
+		    </section>
+		
+		    <!-- Expected Outcomes -->
+		    <section class="px-4 md-px-20 my-4 pt-24 pb-14">
+			<div className="bg-rose-100 md:grid md:grid-cols-2 mb-16">
+		              <div>
+		                <img
+		                  src={parentchild}
+		                  className="md:mx-auto md:max-w-[600px]"
+		                  alt="AU Agenda"
+		                />
+		              </div>
+		              <div className="py-10">
+		                <p className="uppercase text-primary font-medium text-xl py-2">
+		                  Expected Outcomes
+		                </p>
+		                <div className="flex justify-between">
+		                  <p className="text-2xl font-medium leading-snug pb-10">
+		                    These are our short term and long term expected outcomes for
+		                    the{" "}
+		                    <span className="text-primary font-bold">
+		                      pre-Ashesi University
+		                    </span>{" "}
+		                    candidate
+		                  </p>
+		                </div>
+		              </div>
+		            </div>
+		
+		            <div className="md:grid md:grid-cols-3">
+		              <div className="bg-rose-100 mx-2">
+		                <div className="max-w-xl space-y-3">
+		                  <div className="relative bg-primary text-center py-2">
+		                    <p className="uppercase text-white font-medium text-xl">
+		                      {" "}
+		                      Different Thinking{" "}
+		                    </p>
+		                  </div>
+		
+		                  <p className="pb-4 px-6 text-lg">
+		                    African students who use different ways of thinking and
+		                    understand how to apply content knowledge and skill and can
+		                    connect theory to application better because of a relatable
+		                    cultural context.
+		                  </p>
+		
+		                  <p className="text-lg px-6 pb-4 font-bold">
+		                    African students who use different forms of thinking to
+		                    evaluate underlying beliefs, values, norms and practices
+		                    that permeate the various cultures to solve problems in
+		                    Africa.
+		                  </p>
+		
+		                  <p className="text-lg px-6 pb-2 font-bold">
+		                    African students who consider and use different ways of
+		                    thinking to tackle challenges, and disrupt social issues
+		                    related to the African
+		                  </p>
+		                </div>
+		              </div>
+		              <div className="mx-2">
+		                <div className="max-w-xl space-y-3">
+		                  <div className="relative bg-primary text-center py-2">
+		                    <p className="uppercase text-white font-medium text-xl">
+		                      {" "}
+		                      Use knowledge{" "}
+		                    </p>
+		                  </div>
+		
+		                  <p className="pb-4 px-6 text-lg">
+		                    African students who can apply and transfer knowledge to
+		                    real life projects faster because of shorter knowledge
+		                    transfer path.
+		                  </p>
+		
+		                  <p className="pt-8 px-6 text-lg font-bold">
+		                    African students who rethink thinking – a process that
+		                    requires learning to unlearn in order to re- learn to
+		                    problem solve on the continent.
+		                  </p>
+		                </div>
+		              </div>
+		              <div className="bg-rose-100 mx-2">
+		                <div className="max-w-xl space-y-3">
+		                  <div className="relative bg-primary text-center py-2">
+		                    <p className="uppercase text-white font-medium text-xl">
+		                      {" "}
+		                      Technology{" "}
+		                    </p>
+		                  </div>
+		
+		                  <p className="pb-4 px-6 text-lg">
+		                    African students who are attentive and can grasp meaning
+		                    because of numerous technological modalities used (e.g.,
+		                    PWA, 3D, animation etc.).
+		                  </p>
+		
+		                  <p className="pt-10 px-6 text-lg">
+		                    African students who have access to content because some
+		                    content may not fully rely on internet connectivity, e.g.,
+		                    USSD menu navigation to lecture audio recordings, which
+		                    are accessed through links sent to SMS, etc.
+		                  </p>
+		                </div>
+		              </div>
+		            </div>
+		    </section>
+		
+		    <!-- Courses/Modules -->
+		    <section class="px-4 md-px-20 pb-10">
+			 <p className="uppercase text-primary font-medium text-lg">
+		              Modules
+		            </p>
+		
+		            <div className="flex justify-between pt-3 items-end">
+		              <p className="text-xl md:text-2xl text-[#09091B] font-medium">
+		                Experience first hand a carefully curated course structure made
+		                for the <br />
+		                <span className="text-primary font-bold">
+		                  pre-Ashesi university
+		                </span>{" "}
+		                candidate
+		              </p>
+		              <div>
+		                <button
+		                  className="py-3 border border-primary px-10 text-white bg-primary text-lg font-medium rounded"
+		                  onClick={() => navigate("/preashesicourses")}
+		                >
+		                  Enrol in Modules
+		                </button>
+		              </div>
+		            </div>
+		
+		            {/* Enroll Couse Cards  */}
+		            <div className="mt-12 ">
+		              <EnrolmentCourseCards />
+		            </div>
+		    </section>
+		</main>
+
+                <!-- Footer component would go here -->
+            </main>
+        </div>
+    </div>
 </body>
-</html> 
+</html>
