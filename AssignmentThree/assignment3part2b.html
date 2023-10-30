@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hammer.js - Pinch and Rotate</title>
+    <!-- <link rel="stylesheet" href="example.css"> -->
+    
+    <script src="https://cdn.rawgit.com/hammerjs/touchemulator/master/touch-emulator.js"></script>
+
+    <script>
+    var square=document.querySelector('.square');var manager=new Hammer.Manager(square);var Tap=new Hammer.Tap({taps:1});manager.add(Tap);manager.on('tap',function(e){e.target.classList.toggle('expand')});
+    </script>
+    <style>
+        * {
+        box-sizing: border-box;
+        }
+
+        html, body {
+        height: 100%;
+        }
+
+        body {
+        background-color: #000;
+        margin: 0;
+        }
+
+        .center-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+        .square {
+        width: 90px;
+        height: 90px;
+        background-color: #00B0FF;
+        transition: transform 300ms ease-out;
+        }
+
+        .expand {
+        transform: scale(2.5);
+        }
+    </style>
+</head>
+
+<body class="center-center">  
+    <div class="square">Pinch Zoom and Move</div>
+</body>  
+    
+</html>
