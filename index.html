@@ -1,226 +1,67 @@
 <!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fiverr Homepage Clone | CodingNepal</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Icons Link -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
 </head>
 <body>
-    <div>
-        <div class="bg-white">
-            <div class="header">
-		<div class="container">
-		<!-- Logo Section -->
-		<div class="logo-section">
-		    <a href="/" class="logo-link">
-			<img src="Ashesi_University_Logo.png" alt="Ashesi University Logo" class="logo-img">
-			<p>e-Learning</p>
-		    </a>
-		    <p>Website</p>
-		</div>
-	
-		<div class="navbar">
-		    <ul class="nav-list">
-		        <li class="nav-item">
-		            <a href="link_here" class="nav-link">Nav 1</a>
-		            <!-- Placeholder for red dot (You can toggle the 'active' class based on the current page) -->
-		            <span class="red-dot"></span>
-		        </li>
-		        <li class="nav-item">
-		            <a href="link_here" class="nav-link">Nav 2</a>
-		        </li>
-		    </ul>
-		</div>
-	    </div>
-	</div>
+  <header>
+    <nav class="navbar">
+      <a href="#" class="logo">
+        <img src="images/logo.svg" alt="Fiverr Logo">
+      </a>
+      <ul class="menu-links">
+        <li><a href="#">Fiverr Business</a></li>
+        <li><a href="#">Explore</a></li>
+        <li class="language-item">
+          <a href="#">
+            <span class="material-symbols-outlined">language</span>
+            English
+          </a>
+        </li>
+        <li><a href="#">Become a Seller</a></li>
+        <li><a href="#">Sign In</a></li>
+        <li class="join-btn"><a href="#">Join Us</a></li>
+        <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+      </ul>
+      <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+    </nav>
+  </header>
 
-
-            <main>
-                <main>
-		    <!-- OUR VISION  -->
-		    <section class="px-4 md-px-20 my-4 bg-[#f9f9f9] py-24">
-			<div className="md:grid md:grid-cols-2">
-		              <div>
-		                <div className="max-w-xl space-y-3">
-		                  <p className="uppercase text-primary font-medium text-xl">
-		                    Our Vision
-		                  </p>
-		                  <div className="flex justify-between">
-		                    <p className="text-4xl font-semibold leading-snug">
-		                      Empower young Africans to think{" "}
-		                      <span className="text-primary">differently.</span>
-		                    </p>
-		                  </div>
-		
-		                  <p>
-		                    With the Ashesi e-Learning Platform, young Africans admitted
-		                    to university will be empowered to use different ways of
-		                    thinking (i.e., critical, quantitative, visual,
-		                    entrepreneurial, innovative, etc.) to deeply understand
-		                    their discipline and learn context-specific approaches to
-		                    problem solving with the intent to transform Africa
-		                  </p>
-		
-		                  <div className="pt-6">
-		                    <button
-		                      className="bg-primary text-white py-2 w-40 rounded mx-auto"
-		                      onClick={() => navigate("/faqs")}
-		                    >
-		                      Learn More
-		                    </button>
-		                  </div>
-		                </div>
-		              </div>
-		
-		              <div>
-		                <img
-		                  src={AfricaIllustration}
-		                  className="mx-auto max-w-[400px]"
-		                  alt="Africa Map"
-		                />
-		              </div>
-		            </div>
-		    </section>
-		
-		    <!-- Expected Outcomes -->
-		    <section class="px-4 md-px-20 my-4 pt-24 pb-14">
-			<div className="bg-rose-100 md:grid md:grid-cols-2 mb-16">
-		              <div>
-		                <img
-		                  src={parentchild}
-		                  className="md:mx-auto md:max-w-[600px]"
-		                  alt="AU Agenda"
-		                />
-		              </div>
-		              <div className="py-10">
-		                <p className="uppercase text-primary font-medium text-xl py-2">
-		                  Expected Outcomes
-		                </p>
-		                <div className="flex justify-between">
-		                  <p className="text-2xl font-medium leading-snug pb-10">
-		                    These are our short term and long term expected outcomes for
-		                    the{" "}
-		                    <span className="text-primary font-bold">
-		                      pre-Ashesi University
-		                    </span>{" "}
-		                    candidate
-		                  </p>
-		                </div>
-		              </div>
-		            </div>
-		
-		            <div className="md:grid md:grid-cols-3">
-		              <div className="bg-rose-100 mx-2">
-		                <div className="max-w-xl space-y-3">
-		                  <div className="relative bg-primary text-center py-2">
-		                    <p className="uppercase text-white font-medium text-xl">
-		                      {" "}
-		                      Different Thinking{" "}
-		                    </p>
-		                  </div>
-		
-		                  <p className="pb-4 px-6 text-lg">
-		                    African students who use different ways of thinking and
-		                    understand how to apply content knowledge and skill and can
-		                    connect theory to application better because of a relatable
-		                    cultural context.
-		                  </p>
-		
-		                  <p className="text-lg px-6 pb-4 font-bold">
-		                    African students who use different forms of thinking to
-		                    evaluate underlying beliefs, values, norms and practices
-		                    that permeate the various cultures to solve problems in
-		                    Africa.
-		                  </p>
-		
-		                  <p className="text-lg px-6 pb-2 font-bold">
-		                    African students who consider and use different ways of
-		                    thinking to tackle challenges, and disrupt social issues
-		                    related to the African
-		                  </p>
-		                </div>
-		              </div>
-		              <div className="mx-2">
-		                <div className="max-w-xl space-y-3">
-		                  <div className="relative bg-primary text-center py-2">
-		                    <p className="uppercase text-white font-medium text-xl">
-		                      {" "}
-		                      Use knowledge{" "}
-		                    </p>
-		                  </div>
-		
-		                  <p className="pb-4 px-6 text-lg">
-		                    African students who can apply and transfer knowledge to
-		                    real life projects faster because of shorter knowledge
-		                    transfer path.
-		                  </p>
-		
-		                  <p className="pt-8 px-6 text-lg font-bold">
-		                    African students who rethink thinking – a process that
-		                    requires learning to unlearn in order to re- learn to
-		                    problem solve on the continent.
-		                  </p>
-		                </div>
-		              </div>
-		              <div className="bg-rose-100 mx-2">
-		                <div className="max-w-xl space-y-3">
-		                  <div className="relative bg-primary text-center py-2">
-		                    <p className="uppercase text-white font-medium text-xl">
-		                      {" "}
-		                      Technology{" "}
-		                    </p>
-		                  </div>
-		
-		                  <p className="pb-4 px-6 text-lg">
-		                    African students who are attentive and can grasp meaning
-		                    because of numerous technological modalities used (e.g.,
-		                    PWA, 3D, animation etc.).
-		                  </p>
-		
-		                  <p className="pt-10 px-6 text-lg">
-		                    African students who have access to content because some
-		                    content may not fully rely on internet connectivity, e.g.,
-		                    USSD menu navigation to lecture audio recordings, which
-		                    are accessed through links sent to SMS, etc.
-		                  </p>
-		                </div>
-		              </div>
-		            </div>
-		    </section>
-		
-		    <!-- Courses/Modules -->
-		    <section class="px-4 md-px-20 pb-10">
-			 <p className="uppercase text-primary font-medium text-lg">
-		              Modules
-		            </p>
-		
-		            <div className="flex justify-between pt-3 items-end">
-		              <p className="text-xl md:text-2xl text-[#09091B] font-medium">
-		                Experience first hand a carefully curated course structure made
-		                for the <br />
-		                <span className="text-primary font-bold">
-		                  pre-Ashesi university
-		                </span>{" "}
-		                candidate
-		              </p>
-		              <div>
-		                <button
-		                  className="py-3 border border-primary px-10 text-white bg-primary text-lg font-medium rounded"
-		                  onClick={() => navigate("/preashesicourses")}
-		                >
-		                  Enrol in Modules
-		                </button>
-		              </div>
-		            </div>
-		
-		            {/* Enroll Couse Cards  */}
-		            <div className="mt-12 ">
-		              <EnrolmentCourseCards />
-		            </div>
-		    </section>
-		</main>
-
-                <!-- Footer component would go here -->
-            </main>
-        </div>
+  <section class="hero-section">
+    <div class="content">
+      <h1>Find the right freelance service, right away</h1>
+      <form action="#" class="search-form">
+        <input type="text" placeholder="Search for any service..." required>
+        <button class="material-symbols-outlined" type="sumbit">search</button>
+      </form>
+      <div class="popular-tags">
+        Popular:
+        <ul class="tags">
+          <li><a href="#">Webite Design</a></li>
+          <li><a href="#">Logo Design</a></li>
+          <li><a href="#">WordPress</a></li>
+          <li><a href="#">AI Design</a></li>
+        </ul>
+      </div>
     </div>
+  </section>
+  
+  <script>
+    const header = document.querySelector("header");
+    const hamburgerBtn = document.querySelector("#hamburger-btn");
+    const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+    // Toggle mobile menu on hamburger button click
+    hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+    // Close mobile menu on close button click
+    closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+  </script>
 </body>
 </html>
