@@ -36,7 +36,7 @@ header .navbar {
 }
 
 .navbar .menu-links li a {
-  color: #fff;
+  color: black;
   font-weight: 500;
   text-decoration: none;
   transition: 0.2s ease;
@@ -53,19 +53,7 @@ header .navbar {
 }
 
 .navbar .menu-links li a:hover {
-  color: #1dbf73;
-}
-
-.navbar .menu-links .join-btn a {
-  border: 1px solid #fff;
-  padding: 8px 15px;
-  border-radius: 4px;
-}
-
-.navbar .menu-links .join-btn a:hover {
-  color: #fff;
-  border-color: transparent;
-  background: #1dbf73;
+  color: pink;
 }
 
 .hero-section {
@@ -86,7 +74,7 @@ header .navbar {
 }
 
 .hero-section .content h1 {
-  color: #fff;
+  color: black;
   font-size: 3rem;
   max-width: 630px;
   line-height: 65px;
@@ -115,8 +103,8 @@ header .navbar {
   border: none;
   outline: none;
   cursor: pointer;
-  background: #1dbf73;
-  color: #fff;
+  background: pink;
+  color: black;
   border-radius: 0 4px 4px 0;
   transition: background 0.2s ease;
 }
@@ -127,7 +115,7 @@ header .navbar {
 
 .hero-section .popular-tags {
   display: flex;
-  color: #fff;
+  color: black;
   gap: 25px;
   font-size: 0.875rem;
   font-weight: 500;
@@ -143,7 +131,7 @@ header .navbar {
 
 .hero-section .tags li a {
   text-decoration: none;
-  color: #fff;
+  color: black;
   border: 1px solid #fff;
   padding: 4px 12px;
   border-radius: 50px;
@@ -152,11 +140,11 @@ header .navbar {
 
 .hero-section .tags li a:hover {
   color: #000;
-  background: #fff;
+  background: black;
 }
 
 .navbar #hamburger-btn {
-  color: #fff;
+  color: black;
   cursor: pointer;
   display: none;
   font-size: 1.7rem;
