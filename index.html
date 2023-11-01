@@ -1,77 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MHI1000 Assignment</title>
-  <link rel="stylesheet" href="style.css">
-  <!-- Google Icons Link -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-  <script src="script.js" defer></script>
-</head>
-<body>
-  <header>
-    <nav class="navbar">
-      <a href="#" class="logo">
-        <img src="images/logo.svg" alt="My Logo">
-      </a>
-      <ul class="menu-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Me</a></li>
-        <li><a href="#">My LinkedIn</a></li>
-        <li><a href="#">Contact Us</a></li>
-        <span id="close-menu-btn" class="material-symbols-outlined">close</span>
-      </ul>
-      <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
-    </nav>
-  </header>
-
-  <section class="hero-section">
-    <div class="content">
-      <h1>Find the right freelance service, right away</h1>
-      <form action="#" class="search-form">
-        <input type="text" placeholder="Search for any service..." required>
-        <button class="material-symbols-outlined" type="sumbit">search</button>
-      </form>
-      <div class="popular-tags">
-        Popular:
-        <ul class="tags">
-          <li><a href="#">Webite Design</a></li>
-          <li><a href="#">Logo Design</a></li>
-          <li><a href="#">WordPress</a></li>
-          <li><a href="#">AI Design</a></li>
+<html>
+  <head>
+    <title> MHI1000 Assignment - Marian's Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/lightbox.min.css">
+  </head>
+  <body>
+    <div class="card text-center">
+      <div class="card-header">
+        <ul class="nav nav-pills card-header-pills">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="images.html">Images</a>
+          </li>
         </ul>
       </div>
     </div>
-  </section>
+    <h1> Welcome to my website :)</h1>
+    <p>How's it going? </p>
+    <p>I just wanted to say hi to you</p>
+    <img src="https://i.etsystatic.com/42253944/r/il/b16339/4807415771/il_1588xN.4807415771_jnyh.jpg" width="200px">
+    <img src="images/img-1.jpg" width="200px"><br/>
+    <a href="https://www.google.com"> Go to Google </a>
 
-  <div class="wrapper">
-      <i id="left" class="fa-solid fa-angle-left"></i>
-      <div class="carousel">
-        <img src="images/img-1.jpg" alt="img" draggable="false">
-        <img src="images/img-2.jpg" alt="img" draggable="false">
-        <img src="images/img-3.jpg" alt="img" draggable="false">
-        <img src="images/img-4.jpg" alt="img" draggable="false">
-        <img src="images/img-5.jpg" alt="img" draggable="false">
-        <img src="images/img-6.jpg" alt="img" draggable="false">
-        <img src="images/img-7.jpg" alt="img" draggable="false">
-        <img src="images/img-8.jpg" alt="img" draggable="false">
-        <img src="images/img-9.jpg" alt="img" draggable="false">
+    <section>
+      <h3>Two Individual Images</h3>
+      <div>
+        <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-1.jpg" data-lightbox="example-1"><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-1.jpg" alt="image-1" /></a>
+        <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-2.jpg" data-lightbox="example-2" data-title="Optional caption."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-2.jpg" alt="image-1"/></a>
       </div>
-      <i id="right" class="fa-solid fa-angle-right"></i>
-    </div>
-  
-  <script>
-    const header = document.querySelector("header");
-    const hamburgerBtn = document.querySelector("#hamburger-btn");
-    const closeMenuBtn = document.querySelector("#close-menu-btn");
 
-    // Toggle mobile menu on hamburger button click
-    hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+      <hr />
 
-    // Close mobile menu on close button click
-    closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
-  </script>
-</body>
+      <h3>A Four Image Set</h3>
+      <div>
+        <a class="example-image-link" href="https://i.etsystatic.com/42253944/r/il/b16339/4807415771/il_1588xN.4807415771_jnyh.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="https://i.etsystatic.com/42253944/r/il/b16339/4807415771/il_1588xN.4807415771_jnyh.jpg" alt="" width="400px"/></a>
+        <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-4.jpg" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-4.jpg" alt="" /></a>
+        <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-5.jpg" data-lightbox="example-set" data-title="The next image in the set is preloaded as you're viewing."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-5.jpg" alt="" /></a>
+        <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-6.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-6.jpg" alt="" /></a>
+      </div>
+    </section>
+
+    <!-- <section>
+      <p>
+        For more information, visit <a href="http://lokeshdhakar.com/projects/lightbox2/">http://lokeshdhakar.com/projects/lightbox2/</a>
+      </p>
+    </section> -->
+
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+  </body>
 </html>
